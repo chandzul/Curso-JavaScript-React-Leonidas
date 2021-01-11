@@ -47,3 +47,10 @@ new time();
 // 3
 // ...
 ```
+
+# Rest / Spread operators
+
+Sirven para agrupar el conjunto de un array o de un objeto en uno solo:
+
+1. en el caso de `spread` va a crear un nuevo objeto o un nuevo array por jemplo: `{avatar, name} = params`
+2. con `rest` obtendo el resto de elementos o descompongo los elementos `{...otherProps} = params`
