@@ -54,3 +54,9 @@ Sirven para agrupar el conjunto de un array o de un objeto en uno solo:
 
 1. en el caso de `spread` va a crear un nuevo objeto o un nuevo array por jemplo: `{avatar, name} = params`
 2. con `rest` obtendo el resto de elementos o descompongo los elementos `{...otherProps} = params`
+
+# Alias Imports
+
+1.- `import * as myModule from './module'`, importamos todos los exports de un modulo en uno solo llamado **myModule** aplica cuando no te sabes cuel es el `export default`.
+2.- `import module, * as myModule from './module'`, aplica cuando sabes cual es el `export default` y los demas que no sabes le pones **myModule** para englobarlo.
+3.- `import module as myModule from './module'` para renombrar una funcion/clase en especifico con un nombre personalizado por si algun paquete o funcion/clase propia tiene el mismo nombre.
