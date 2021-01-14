@@ -60,3 +60,7 @@ Sirven para agrupar el conjunto de un array o de un objeto en uno solo:
 1.- `import * as myModule from './module'`, importamos todos los exports de un modulo en uno solo llamado **myModule** aplica cuando no te sabes cuel es el `export default`.
 2.- `import module, * as myModule from './module'`, aplica cuando sabes cual es el `export default` y los demas que no sabes le pones **myModule** para englobarlo.
 3.- `import module as myModule from './module'` para renombrar una funcion/clase en especifico con un nombre personalizado por si algun paquete o funcion/clase propia tiene el mismo nombre.
+
+# Dynamic Imports
+
+cargar funcionalidades de un script-modulo solo en las paginas donde se ocupen
