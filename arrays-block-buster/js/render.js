@@ -3,9 +3,9 @@ function renderElement(movie) {
   window.container.append(element);
 }
 
-function buildElement({ title, poster_path, vote_count, id }) {
+function buildElement({ title, poster_path, vote_count, id, recommended }) {
   const template = `
-  <article class="movie recommended">
+  <article class="movie ${(recommended) ? 'recommended' : ''}">
     <img class="movie-poster" src="//image.tmdb.org/t/p/w220_and_h330_face/${poster_path}" alt="${title}">
     <p class="movie-title">${title}</p>
     <p class="movie-id">${id}</p>

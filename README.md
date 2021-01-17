@@ -64,3 +64,19 @@ Sirven para agrupar el conjunto de un array o de un objeto en uno solo:
 # Dynamic Imports
 
 cargar funcionalidades de un script-modulo solo en las paginas donde se ocupen
+
+# .map
+
+es parecido a un .forEach, .forOf pero no es igual. un .map si si te retorna algo. si tengo 5 elementos retorno 5 elemento sirve para modificar este array.
+
+```js
+function setRecommendedMovies( movies ) {
+  return movies.map((movie, index) => {
+    return {
+      ...movie,
+      recommended: movie.vote_average > 7
+    }
+  });
+  // console.table(newMovies, ['title', 'vote_average', 'recommended']);
+}
+```
