@@ -80,3 +80,15 @@ function setRecommendedMovies( movies ) {
   // console.table(newMovies, ['title', 'vote_average', 'recommended']);
 }
 ```
+
+# .filter
+
+El metodo filter nos ayuda a buscar y retornar solo los datos especificos de un array
+
+```js
+function filterByTitle(title) {
+  return movies.filter((movie) => {
+   return movie.title.toLowerCase().includes(title.toLowerCase());
+  });
+}
+```
