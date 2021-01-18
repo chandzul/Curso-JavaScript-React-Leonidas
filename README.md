@@ -92,3 +92,15 @@ function filterByTitle(title) {
   });
 }
 ```
+
+# .find
+
+Funciona como `.filter` con la exepcion que `.find` solo te retorna un elemento y es con el primero con el que se encuentre cuando `.filter` te trae todas las coincidencias que se encuentren.
+
+```js
+function findById(id) {
+  return movies.find((movie) => {
+    return movie.id === parseInt(id, 10);
+  });
+}
+```
