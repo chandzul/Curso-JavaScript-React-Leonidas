@@ -1,3 +1,8 @@
+function renderMovieListFromMap(list, map) {
+  cleanMovieList();
+  list.forEach(movieId => renderElement(map.get(movieId)));
+}
+
 function renderElement(movie) {
   const element = buildElement(movie)
   window.container.append(element);
@@ -34,5 +39,6 @@ function render(list) {
 }
 
 export {
-  render
+  render,
+  renderMovieListFromMap
 }

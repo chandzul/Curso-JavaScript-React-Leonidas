@@ -104,3 +104,13 @@ function findById(id) {
   });
 }
 ```
+
+# .reduce
+
+Su funcion es devolver un nuevo estado del valor que se esta iterando.
+
+```js
+const popular = rawMoviesList.reduce((prevValue, actualValue, index) => {
+// 
+}, []); // inicializamos con un array vacio
+```
