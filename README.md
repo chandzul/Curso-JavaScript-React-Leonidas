@@ -114,3 +114,19 @@ const popular = rawMoviesList.reduce((prevValue, actualValue, index) => {
 // 
 }, []); // inicializamos con un array vacio
 ```
+
+# POO
+
+4 pilares que hay que tener en cuanta cuando se hace POO:
+
+```js
+class myClass {
+  // 
+}
+```
+
+1. Herencia
+  `constructor() {}`
+2. Encapsulamiento
+3. Abstracción
+4. Polimorfismo 
