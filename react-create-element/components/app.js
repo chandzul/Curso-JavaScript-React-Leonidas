@@ -1,6 +1,6 @@
 import { Component, createElement } from '../lib/react/index.js';
-// import User from './user.js';
-// import Wrapper from './wrapper.js';
+import User from './user.js';
+import Wrapper from './wrapper.js';
 // import UserStyled from './user-styled.js';
 
 
@@ -12,11 +12,21 @@ console.log(element);
 
 class App extends Component {
   render() {
-    return `
-      <div class="app">
-        <h1>Hola Mundo</h1>
-      </div>
-    `;
+    return createElement('div', {
+      class: 'app',
+      // children: [
+      //   createElement('h1', {}, 'hola'),
+      //   createElement('h1', {}, 'mundo')
+      // ],
+      children: new Wrapper({
+        children: [
+          new User({
+            avatar: './images/ash.jpg',
+            name: 'Ash K..'
+          }),
+        ]
+      }),
+    }, 'esta es la app');
   }
 }
 
